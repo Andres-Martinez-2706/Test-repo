@@ -26,7 +26,7 @@ function mostrarDatos(data){
         data: data.hourly.temperature_2m,
         borderWidth: 1
     }];
-    grafico.update();4
+    grafico.update();
 
 }
 function cargarDatos(){
@@ -56,7 +56,7 @@ document.getElementById("buscar_datos").addEventListener('click',cargarDatos);
 //Ejemplo de creación de Gráfico
 const ctx = document.getElementById('grafico');
 
-let grafico =new Chart(ctx, {
+let grafico = new Chart(ctx, {
     type: 'line',
     data: {
         labels: ['2025-03-02T00:00', '2025-03-02T01:00', '2025-03-02T02:00', '2025-03-02T03:00', '2025-03-02T04:00'],
@@ -73,4 +73,4 @@ let grafico =new Chart(ctx, {
             }
         }
     }
-  });
+});
