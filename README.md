@@ -1,5 +1,5 @@
 # Read me
 
-##Description:
+## Description:
 
-repo made only with academic propuses, please ignore :)
+repo made only with academic propuses, please ignore 😊
