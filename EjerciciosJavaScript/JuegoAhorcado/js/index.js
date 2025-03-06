@@ -44,8 +44,6 @@ function reiniciar() {
     document.getElementById("jugar").disabled = false;
     document.getElementById("reiniciar").disabled = true;
     document.getElementById("palabra").textContent = "";
-    letrasUsadas = [];
-    intentosRestantes = 6;
     jugar();
 
 }
@@ -73,8 +71,7 @@ function validarLetra() {
 
             if (document.getElementById("palabra").textContent == palabraSecreta) {
                 alert("Felicitaciones, has adivinado la palabra");
-                document.getElementById("validar").disabled = true;
-                document.getElementById("reiniciar").disabled = true;
+
             }
         }else{
             alert("La letra no se encuentra en la palabra");
