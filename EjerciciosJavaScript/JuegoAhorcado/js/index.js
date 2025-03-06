@@ -53,7 +53,7 @@ function validarLetra() {
     } else {
         letrasUsadas.push(letra);
         console.log(letrasUsadas);
-        document.getElementById("letrasUsadas").textContent = letrasUsadas.toString();
+        document.getElementById("letrasUsadas").textContent = letrasUsadas.join(", ");
 
         let temp = document.getElementById("palabra").textContent.split("");
 
