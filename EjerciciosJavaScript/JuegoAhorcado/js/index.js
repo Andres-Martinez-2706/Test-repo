@@ -43,6 +43,11 @@ function jugar() {
 function reiniciar() {
     document.getElementById("jugar").disabled = false;
     document.getElementById("reiniciar").disabled = true;
+    document.getElementById("palabra").textContent = "";
+    letrasUsadas = [];
+    intentosRestantes = 6;
+    jugar();
+
 }
 
 //Función para validar la letra ingresada por el usuario
