@@ -68,10 +68,12 @@ function validarLetra() {
                 }
             }
             document.getElementById("palabra").textContent = temp.join("");
+            let str = document.getElementById("palabra").textContent.replace(/\s+/g, "");
+            console.log(str);
 
-            if (document.getElementById("palabra").textContent == palabraSecreta) {
+            if (str == palabraSecreta) {
                 alert("Felicitaciones, has adivinado la palabra");
-
+                document.getElementById("validar").disabled = true;
             }
         }else{
             alert("La letra no se encuentra en la palabra");
