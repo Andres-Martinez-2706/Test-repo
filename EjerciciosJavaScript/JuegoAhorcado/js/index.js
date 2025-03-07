@@ -77,6 +77,10 @@ function validarLetra() {
             alert("La letra no se encuentra en la palabra");
             intentosRestantes--;
             document.getElementById("intentosRestantes").textContent = intentosRestantes;
+            if (intentosRestantes == 0) {
+                alert("Lo siento, has perdido");
+                reiniciar();
+            }
         }
     }
     
